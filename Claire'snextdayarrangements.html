@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Claire's Flowers</title>
+			<link href="Claire'sstyle.css" type="text/css" rel="stylesheet"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel="stylesheet" href="normalize.css">
+			
+<body>
+		<div id="page">
+			<div id="logo">
+				<h2>
+					Claire's Flowers
+				</h2>
+		</div>
+		
+		<ul id="navigation">
+			<li><a href="Claire'sflowersindex.html" class="on">Home</a></li>
+			<li><a href="Claire'sgallery.html">Gallery</a></li>
+			<li><a href="Claire'saboutus.html">About Us</a></li>
+			<li><a href="Claire'spricingandtrends.html">Trends</a></li>
+			<li><a href="Claire'stestimonials.html">Testimonials</a></li>
+			<li><a href="Claire'snextdayarrangements.html">Next-Day Arrangements</a></li>
+		</ul>
+
+<!--Drag and drop-->
+
+
+<h3>Drag and drop the arrangement of your choice.  All arrangements are $49.99</h3>
+
+		<script>
+			function allowDrop(ev) {
+  			ev.preventDefault();
+			}
+
+			function drag(ev) {
+  			ev.dataTransfer.setData("text", ev.target.id);
+			}
+
+			function drop(ev) {
+  			ev.preventDefault();
+  			var data = ev.dataTransfer.getData("text");
+  			ev.target.appendChild(document.getElementById(data));
+			}		
+		</script>
+		
+<!--image 1-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag1" src="image1.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 2-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+ <img id="drag2" src="image2.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 3-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag3" src="image3.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 4-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag4" src="image4.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 5-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag5" src="image5.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 6-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag6" src="image6.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 7-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag7" src="image7.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<!--image 8-->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+   <img id="drag8" src="image8.jpeg" draggable="true" ondragstart="drag(event)" width="300" height="300"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<h1> $50 All arrangements are $50</h1>
+<style type="text/css">
+h1 {
+color: #ffffff;
+}
+</style>
+</body>
+	</head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
